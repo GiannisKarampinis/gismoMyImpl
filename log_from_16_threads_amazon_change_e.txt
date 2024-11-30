@@ -1,0 +1,5164 @@
+Execution Log - 2024-11-30 13:26:10.640675
+Executable: /home/ubuntu/gismo/build/bin/poisson2_example
+Ranges: -r [5, 5], -e [1, 8], Threads [2, 16]
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 18.558
+     Setup: 0.102619
+  Assembly: 6.73838
+   Solving: 1.63676
+     Norms: 10.0802
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 12.6197
+     Setup: 0.102205
+  Assembly: 4.47737
+   Solving: 1.33709
+     Norms: 6.70306
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 9.72811
+     Setup: 0.102702
+  Assembly: 3.46594
+   Solving: 1.10203
+     Norms: 5.05744
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 7.85947
+     Setup: 0.102252
+  Assembly: 2.76344
+   Solving: 0.940467
+     Norms: 4.05331
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 6.67553
+     Setup: 0.101882
+  Assembly: 2.3305
+   Solving: 0.872438
+     Norms: 3.3707
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 5.83795
+     Setup: 0.101972
+  Assembly: 2.04567
+   Solving: 0.804271
+     Norms: 2.88603
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 5.1593
+     Setup: 0.101831
+  Assembly: 1.80337
+   Solving: 0.73351
+     Norms: 2.52059
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 4.66367
+     Setup: 0.10206
+  Assembly: 1.62442
+   Solving: 0.699655
+     Norms: 2.23753
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 4.31213
+     Setup: 0.102656
+  Assembly: 1.50719
+   Solving: 0.680677
+     Norms: 2.02161
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 4.00762
+     Setup: 0.102166
+  Assembly: 1.40146
+   Solving: 0.66238
+     Norms: 1.84161
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 3.69634
+     Setup: 0.101939
+  Assembly: 1.27754
+   Solving: 0.628072
+     Norms: 1.68879
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 3.46468
+     Setup: 0.102636
+  Assembly: 1.21326
+   Solving: 0.593677
+     Norms: 1.5551
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 3.27776
+     Setup: 0.10266
+  Assembly: 1.13678
+   Solving: 0.593373
+     Norms: 1.44495
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 3.16384
+     Setup: 0.102562
+  Assembly: 1.11636
+   Solving: 0.587128
+     Norms: 1.35779
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 1 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 3
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8711... 
+
+Total time: 2.97606
+     Setup: 0.102615
+  Assembly: 1.03954
+   Solving: 0.564153
+     Norms: 1.26975
+
+L2 error: 3.941e-06
+H1 error: 3.739e-04
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 31.9451
+     Setup: 0.127675
+  Assembly: 12.4772
+   Solving: 2.88594
+     Norms: 16.4543
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 21.3269
+     Setup: 0.128876
+  Assembly: 8.28074
+   Solving: 1.87175
+     Norms: 11.0456
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 16.5377
+     Setup: 0.129431
+  Assembly: 6.5036
+   Solving: 1.62578
+     Norms: 8.2789
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 13.2768
+     Setup: 0.128874
+  Assembly: 5.17186
+   Solving: 1.36163
+     Norms: 6.61446
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 11.2899
+     Setup: 0.128425
+  Assembly: 4.42938
+   Solving: 1.20286
+     Norms: 5.52928
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 9.89266
+     Setup: 0.128923
+  Assembly: 3.91278
+   Solving: 1.12323
+     Norms: 4.72773
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 8.72289
+     Setup: 0.129439
+  Assembly: 3.42875
+   Solving: 1.02743
+     Norms: 4.13728
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 7.79809
+     Setup: 0.128975
+  Assembly: 3.05136
+   Solving: 0.944859
+     Norms: 3.6729
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 7.13943
+     Setup: 0.128716
+  Assembly: 2.80348
+   Solving: 0.899833
+     Norms: 3.30741
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 6.63445
+     Setup: 0.128266
+  Assembly: 2.62816
+   Solving: 0.84931
+     Norms: 3.02871
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 6.15361
+     Setup: 0.129292
+  Assembly: 2.45313
+   Solving: 0.801809
+     Norms: 2.76938
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 5.75879
+     Setup: 0.128836
+  Assembly: 2.2784
+   Solving: 0.796744
+     Norms: 2.55481
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 5.52848
+     Setup: 0.128848
+  Assembly: 2.26797
+   Solving: 0.755472
+     Norms: 2.37619
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 5.59064
+     Setup: 0.128183
+  Assembly: 2.50469
+   Solving: 0.742054
+     Norms: 2.21572
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 2 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 4
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 8977... 
+
+Total time: 5.01482
+     Setup: 0.129772
+  Assembly: 2.08456
+   Solving: 0.724353
+     Norms: 2.07613
+
+L2 error: 2.106e-07
+H1 error: 1.890e-05
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 53.7132
+     Setup: 0.160307
+  Assembly: 22.5628
+   Solving: 5.33568
+     Norms: 25.6545
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 36.0139
+     Setup: 0.159881
+  Assembly: 15.2359
+   Solving: 3.4549
+     Norms: 17.1633
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 27.7531
+     Setup: 0.160547
+  Assembly: 11.7946
+   Solving: 2.97079
+     Norms: 12.8272
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 22.5189
+     Setup: 0.159528
+  Assembly: 9.59658
+   Solving: 2.46327
+     Norms: 10.2995
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 19.0514
+     Setup: 0.159286
+  Assembly: 8.14228
+   Solving: 2.15879
+     Norms: 8.59108
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 16.7041
+     Setup: 0.160561
+  Assembly: 7.17463
+   Solving: 1.97691
+     Norms: 7.39195
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 14.4615
+     Setup: 0.159687
+  Assembly: 6.07319
+   Solving: 1.79829
+     Norms: 6.43029
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 13.1289
+     Setup: 0.160849
+  Assembly: 5.57979
+   Solving: 1.65585
+     Norms: 5.73236
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 12.2294
+     Setup: 0.159986
+  Assembly: 5.35797
+   Solving: 1.55287
+     Norms: 5.15861
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 11.3431
+     Setup: 0.160665
+  Assembly: 5.06193
+   Solving: 1.43853
+     Norms: 4.68199
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 10.3706
+     Setup: 0.160722
+  Assembly: 4.61476
+   Solving: 1.31749
+     Norms: 4.27766
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 9.82892
+     Setup: 0.159896
+  Assembly: 4.39089
+   Solving: 1.30541
+     Norms: 3.97272
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 10.2366
+     Setup: 0.159864
+  Assembly: 5.08489
+   Solving: 1.28949
+     Norms: 3.70237
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 9.65689
+     Setup: 0.16114
+  Assembly: 4.8323
+   Solving: 1.20959
+     Norms: 3.45385
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 3 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 5
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9247... 
+
+Total time: 9.39292
+     Setup: 0.160534
+  Assembly: 4.85589
+   Solving: 1.15369
+     Norms: 3.22281
+
+L2 error: 1.184e-08
+H1 error: 1.035e-06
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 93.5456
+     Setup: 0.196645
+  Assembly: 43.2838
+   Solving: 11.7385
+     Norms: 38.3266
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 62.2665
+     Setup: 0.197116
+  Assembly: 28.4878
+   Solving: 8.03291
+     Norms: 25.5487
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 48.1594
+     Setup: 0.196694
+  Assembly: 22.2551
+   Solving: 6.47516
+     Norms: 19.2324
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 38.1546
+     Setup: 0.197008
+  Assembly: 17.5382
+   Solving: 5.0447
+     Norms: 15.3747
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 32.3895
+     Setup: 0.197017
+  Assembly: 14.7221
+   Solving: 4.6619
+     Norms: 12.8085
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 28.6886
+     Setup: 0.197008
+  Assembly: 13.424
+   Solving: 4.16016
+     Norms: 10.9074
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 24.7422
+     Setup: 0.197217
+  Assembly: 11.1777
+   Solving: 3.72839
+     Norms: 9.63892
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 22.6033
+     Setup: 0.197288
+  Assembly: 10.3807
+   Solving: 3.45334
+     Norms: 8.57192
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 21.0864
+     Setup: 0.196882
+  Assembly: 9.93919
+   Solving: 3.22946
+     Norms: 7.72085
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 19.2556
+     Setup: 0.195427
+  Assembly: 8.9995
+   Solving: 3.03711
+     Norms: 7.02353
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 18.8043
+     Setup: 0.198004
+  Assembly: 9.26771
+   Solving: 2.88395
+     Norms: 6.45459
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 18.2469
+     Setup: 0.196966
+  Assembly: 9.31171
+   Solving: 2.78383
+     Norms: 5.95444
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 17.4713
+     Setup: 0.19722
+  Assembly: 9.03477
+   Solving: 2.67516
+     Norms: 5.56415
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 15.8823
+     Setup: 0.197934
+  Assembly: 7.85295
+   Solving: 2.62345
+     Norms: 5.208
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 4 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 6
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9521... 
+
+Total time: 16.7443
+     Setup: 0.197116
+  Assembly: 9.14196
+   Solving: 2.5013
+     Norms: 4.90397
+
+L2 error: 7.076e-10
+H1 error: 6.071e-08
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 165.829
+     Setup: 0.236327
+  Assembly: 78.6635
+   Solving: 31.525
+     Norms: 55.4038
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 109.047
+     Setup: 0.239393
+  Assembly: 49.9168
+   Solving: 21.9589
+     Norms: 36.9317
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 84.1091
+     Setup: 0.237454
+  Assembly: 39.7229
+   Solving: 16.5518
+     Norms: 27.5969
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 67.4661
+     Setup: 0.238876
+  Assembly: 30.7834
+   Solving: 14.3018
+     Norms: 22.142
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 57.2603
+     Setup: 0.238408
+  Assembly: 27.0276
+   Solving: 11.4314
+     Norms: 18.5629
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 50.4116
+     Setup: 0.23624
+  Assembly: 23.4642
+   Solving: 10.8363
+     Norms: 15.8749
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 43.8044
+     Setup: 0.236271
+  Assembly: 20.1521
+   Solving: 9.54563
+     Norms: 13.8704
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 40.634
+     Setup: 0.237663
+  Assembly: 18.959
+   Solving: 9.11373
+     Norms: 12.3236
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 36.9585
+     Setup: 0.238633
+  Assembly: 17.2802
+   Solving: 8.29221
+     Norms: 11.1475
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 34.7415
+     Setup: 0.238041
+  Assembly: 16.5084
+   Solving: 7.84923
+     Norms: 10.1458
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 32.7714
+     Setup: 0.237431
+  Assembly: 15.9431
+   Solving: 7.31466
+     Norms: 9.27621
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 31.5695
+     Setup: 0.238193
+  Assembly: 15.7519
+   Solving: 6.9843
+     Norms: 8.59508
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 28.7031
+     Setup: 0.236593
+  Assembly: 13.6635
+   Solving: 6.75906
+     Norms: 8.04393
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 27.8598
+     Setup: 0.23759
+  Assembly: 13.651
+   Solving: 6.49441
+     Norms: 7.47684
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 5 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 7
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 9799... 
+
+Total time: 29.4361
+     Setup: 0.238075
+  Assembly: 15.6877
+   Solving: 6.44784
+     Norms: 7.0625
+
+L2 error: 4.473e-11
+H1 error: 3.778e-09
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 299.976
+     Setup: 0.286765
+  Assembly: 136.876
+   Solving: 85.5215
+     Norms: 77.2916
+
+L2 error: 2.987e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 200.778
+     Setup: 0.287411
+  Assembly: 87.9174
+   Solving: 61.0646
+     Norms: 51.5088
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 151.52
+     Setup: 0.287825
+  Assembly: 66.0167
+   Solving: 46.5293
+     Norms: 38.686
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 123.694
+     Setup: 0.287428
+  Assembly: 53.1677
+   Solving: 39.2174
+     Norms: 31.021
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 104.126
+     Setup: 0.288224
+  Assembly: 45.2428
+   Solving: 32.6425
+     Norms: 25.9521
+
+L2 error: 2.987e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 90.3411
+     Setup: 0.287236
+  Assembly: 39.0076
+   Solving: 28.738
+     Norms: 22.3083
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 79.3957
+     Setup: 0.288494
+  Assembly: 33.7906
+   Solving: 25.812
+     Norms: 19.5046
+
+L2 error: 2.987e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 73.3663
+     Setup: 0.285623
+  Assembly: 31.982
+   Solving: 23.7069
+     Norms: 17.3919
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 66.5254
+     Setup: 0.286539
+  Assembly: 28.7935
+   Solving: 21.896
+     Norms: 15.5493
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 61.68
+     Setup: 0.287534
+  Assembly: 27.3846
+   Solving: 19.8222
+     Norms: 14.1857
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 58.7872
+     Setup: 0.287326
+  Assembly: 26.4371
+   Solving: 19.029
+     Norms: 13.0338
+
+L2 error: 2.987e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 54.0301
+     Setup: 0.288426
+  Assembly: 23.7512
+   Solving: 17.9123
+     Norms: 12.0781
+
+L2 error: 2.987e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 51.3744
+     Setup: 0.288163
+  Assembly: 22.8007
+   Solving: 17.0592
+     Norms: 11.2263
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 52.3808
+     Setup: 0.288274
+  Assembly: 24.4274
+   Solving: 17.0845
+     Norms: 10.5807
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 6 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 8
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10081... 
+
+Total time: 47.4959
+     Setup: 0.284364
+  Assembly: 21.3667
+   Solving: 15.9147
+     Norms: 9.93009
+
+L2 error: 2.986e-12
+H1 error: 2.563e-10
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 561.284
+     Setup: 0.340282
+  Assembly: 224.011
+   Solving: 230.088
+     Norms: 106.844
+
+L2 error: 2.141e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 382.224
+     Setup: 0.336948
+  Assembly: 149.081
+   Solving: 161.535
+     Norms: 71.2711
+
+L2 error: 2.120e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 286.273
+     Setup: 0.341855
+  Assembly: 111.584
+   Solving: 120.962
+     Norms: 53.3853
+
+L2 error: 2.125e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 237.463
+     Setup: 0.340299
+  Assembly: 91.4295
+   Solving: 102.868
+     Norms: 42.8254
+
+L2 error: 2.116e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 198.804
+     Setup: 0.340304
+  Assembly: 76.1027
+   Solving: 86.6852
+     Norms: 35.6757
+
+L2 error: 2.138e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 172.651
+     Setup: 0.340126
+  Assembly: 65.7161
+   Solving: 76.2625
+     Norms: 30.3326
+
+L2 error: 2.114e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 153.217
+     Setup: 0.339885
+  Assembly: 58.2025
+   Solving: 67.8318
+     Norms: 26.8432
+
+L2 error: 2.128e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 139.029
+     Setup: 0.337542
+  Assembly: 51.7032
+   Solving: 63.2185
+     Norms: 23.7696
+
+L2 error: 2.121e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 127.044
+     Setup: 0.340095
+  Assembly: 48.0286
+   Solving: 57.1603
+     Norms: 21.515
+
+L2 error: 2.114e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 118.283
+     Setup: 0.33775
+  Assembly: 45.3611
+   Solving: 53.2011
+     Norms: 19.3826
+
+L2 error: 2.123e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 109.858
+     Setup: 0.340262
+  Assembly: 41.402
+   Solving: 50.0882
+     Norms: 18.0272
+
+L2 error: 2.121e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 106.041
+     Setup: 0.339088
+  Assembly: 41.1165
+   Solving: 47.8559
+     Norms: 16.7299
+
+L2 error: 2.121e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 97.1336
+     Setup: 0.340335
+  Assembly: 37.3837
+   Solving: 43.9986
+     Norms: 15.4109
+
+L2 error: 2.126e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 93.5653
+     Setup: 0.338032
+  Assembly: 35.5425
+   Solving: 43.1584
+     Norms: 14.5264
+
+L2 error: 2.104e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 7 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 9
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10367... 
+
+Total time: 95.5536
+     Setup: 0.335376
+  Assembly: 39.143
+   Solving: 42.4806
+     Norms: 13.5946
+
+L2 error: 2.153e-13
+H1 error: 6.300e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=2 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=2
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 2
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 1072.26
+     Setup: 0.396119
+  Assembly: 374.527
+   Solving: 553.781
+     Norms: 143.56
+
+L2 error: 1.997e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=3 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=3
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 3
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 735.811
+     Setup: 0.402094
+  Assembly: 245.15
+   Solving: 394.487
+     Norms: 95.772
+
+L2 error: 1.960e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=4 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=4
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 4
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 566.053
+     Setup: 0.401636
+  Assembly: 184.823
+   Solving: 309.652
+     Norms: 71.1757
+
+L2 error: 1.979e-14
+H1 error: 6.040e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=5 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=5
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 5
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 452.653
+     Setup: 0.403544
+  Assembly: 148.481
+   Solving: 246.313
+     Norms: 57.4559
+
+L2 error: 2.025e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=6 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=6
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 6
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 374.75
+     Setup: 0.401759
+  Assembly: 124.591
+   Solving: 201.869
+     Norms: 47.8879
+
+L2 error: 2.084e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=7 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=7
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 7
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 332.272
+     Setup: 0.39634
+  Assembly: 107.602
+   Solving: 183.065
+     Norms: 41.2086
+
+L2 error: 2.053e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=8 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=8
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 8
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 290.396
+     Setup: 0.401347
+  Assembly: 93.4085
+   Solving: 160.779
+     Norms: 35.8069
+
+L2 error: 1.948e-14
+H1 error: 6.040e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=9 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=9
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 9
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 266.912
+     Setup: 0.404838
+  Assembly: 84.976
+   Solving: 149.378
+     Norms: 32.1531
+
+L2 error: 1.967e-14
+H1 error: 6.040e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=10 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=10
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 10
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 240.341
+     Setup: 0.400717
+  Assembly: 77.7488
+   Solving: 133.236
+     Norms: 28.9555
+
+L2 error: 2.012e-14
+H1 error: 6.040e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=11 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=11
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 11
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 222.952
+     Setup: 0.40193
+  Assembly: 71.2392
+   Solving: 124.977
+     Norms: 26.3338
+
+L2 error: 2.015e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=12 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=12
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 12
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 208.446
+     Setup: 0.396028
+  Assembly: 66.3197
+   Solving: 117.518
+     Norms: 24.2124
+
+L2 error: 2.062e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=13 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=13
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 13
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 197.091
+     Setup: 0.396443
+  Assembly: 61.9494
+   Solving: 112.373
+     Norms: 22.3723
+
+L2 error: 1.964e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=14 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=14
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 14
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 187.102
+     Setup: 0.39972
+  Assembly: 59.4018
+   Solving: 106.352
+     Norms: 20.948
+
+L2 error: 1.983e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=15 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=15
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 15
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 181.554
+     Setup: 0.399309
+  Assembly: 60.0961
+   Solving: 101.472
+     Norms: 19.587
+
+L2 error: 2.164e-14
+H1 error: 6.041e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
+Running command: /bin/bash -c OMP_NUM_THREADS=16 /home/ubuntu/gismo/build/bin/poisson2_example -r 5 -e 8 --last
+Environment: OMP_NUM_THREADS=16
+Exit Code: 0
+Output:
+Loaded file /home/ubuntu/gismo/filedata/pde/poisson2d_bvp.xml
+Source function [ 2*pi^2*sin(pi*x)*sin(pi*y) ]
+Boundary conditions:
+* Dirichlet     : 3
+* Neumann       : 3
+
+Patches: 2, degree: 10
+Available threads: 16
+Active options:
+Options (9):
+* DirichletStrategy    (int) = 11       Method for enforcement of Dirichlet BCs [11..14]
+* DirichletValues      (int) = 101      Method for computation of Dirichlet DoF values [100..103]
+* InterfaceStrategy    (int) = 1        Method of treatment of patch interfaces [0..3]
+* bdA                 (real) = 2        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdB                  (int) = 1        Estimated nonzeros per column of the matrix: bdA*deg + bdB
+* bdO                 (real) = 0.333    Overhead of sparse mem. allocation: (1+bdO)(bdA*deg + bdB) [0..1]
+* quA                 (real) = 1        Number of quadrature points: quA*deg + quB
+* quB                  (int) = 1        Number of quadrature points: quA*deg + quB
+* quRule               (int) = 1        Quadrature rule [1:GaussLegendre,2:GaussLobatto]
+
+(dot1=assembled, dot2=solved, dot3=got_error)
+
+DoFs: 10657... 
+
+Total time: 169.967
+     Setup: 0.401036
+  Assembly: 53.327
+   Solving: 98.0108
+     Norms: 18.2285
+
+L2 error: 1.984e-14
+H1 error: 6.040e-11
+Done. No output created, re-run with --plot to get a ParaView file containing the solution.
+
+Errors:
+
+
+========================================
+
